@@ -63,6 +63,8 @@ function handleSubmit(event) {
 function displayConditionTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
+  celsiusLink.classList.remove("active");
+  conditionLink.classList.add("active");
   let conditionTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(conditionTemperature);
 }
