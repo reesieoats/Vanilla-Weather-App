@@ -1,5 +1,9 @@
 function formatDate(timestamp) {
-  return "Friday 05:00";
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let day = date.getDay();
+  return `${day} ${hours}:${minutes}`;
 }
 
 function displayTemperature(response) {
