@@ -60,7 +60,8 @@ function handleSubmit(event) {
 
 function displayConditionTemperature(event) {
   event.preventDefault();
-  alert("link clicked");
+  let conditionTemperature = (14 * 9) / 5 + 32;
+  alert(conditionTemperature);
 }
 
 search("New York");
