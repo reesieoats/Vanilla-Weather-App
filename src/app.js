@@ -12,7 +12,7 @@ function displayTemperature(response) {
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
-  dateElement.innerHTML = "Friday 5:00";
+  dateElement.innerHTML = response.data.coord.dt;
 }
 
 let apiKey = "595adbf6a3ae27cee86c95730ea72e7a";
