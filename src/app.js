@@ -71,6 +71,8 @@ function displayConditionTemperature(event) {
 
 function displayCelsiusTemperature(event) {
   event.preventDefault();
+  celsiusLink.classList.add("active");
+  conditionLink.classList.remove("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
