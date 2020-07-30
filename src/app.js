@@ -1,7 +1,8 @@
 function displayTemperature(response) {
-  console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = response.data.main.temp;
+  let cityElement = document.querySelector("#city");
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  cityElement.innerHTML = response.data.name;
 }
 
 let apiKey = "595adbf6a3ae27cee86c95730ea72e7a";
