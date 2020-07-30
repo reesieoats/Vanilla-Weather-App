@@ -61,7 +61,8 @@ function handleSubmit(event) {
 function displayConditionTemperature(event) {
   event.preventDefault();
   let conditionTemperature = (14 * 9) / 5 + 32;
-  alert(conditionTemperature);
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = conditionTemperature;
 }
 
 search("New York");
