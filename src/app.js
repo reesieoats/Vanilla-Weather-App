@@ -58,7 +58,15 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+function displayConditionTemperature(event) {
+  event.preventDefault();
+  alert("link clicked");
+}
+
 search("New York");
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+let conditionLink = document.querySelector("#condition-link");
+conditionLink.addEventListener("click", displayConditionTemperature);
