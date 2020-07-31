@@ -29,9 +29,8 @@ li:first-letter {
   text-transform: capitalize;
 }
 
-small {
-  display: block;
-  margin: auto;
+.row weather-forcast {
+  margin-right: 0px;
 }
 
 .weather-app-wrapper {
