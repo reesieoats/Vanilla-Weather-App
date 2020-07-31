@@ -104,3 +104,7 @@ li:first-letter {
   line-height: 15px;
   white-space: nowrap;
 }
+
+.row weather-forcast {
+  text-align: center;
+}
