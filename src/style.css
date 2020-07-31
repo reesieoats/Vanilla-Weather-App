@@ -29,7 +29,7 @@ li:first-letter {
   text-transform: capitalize;
 }
 
-.row weather-forcast {
+.col-2 {
   margin-right: 0px;
 }
 
