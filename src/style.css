@@ -107,5 +107,5 @@ li:first-letter {
 
 .row weather-forcast {
   display: block;
-  margin: auto;
+  margin-left: 10px;
 }
