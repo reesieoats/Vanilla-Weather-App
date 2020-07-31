@@ -30,7 +30,8 @@ li:first-letter {
 }
 
 .visit {
-  text-align: center;
+  display: block;
+  margin: auto;
 }
 
 .weather-app-wrapper {
