@@ -104,8 +104,3 @@ li:first-letter {
   line-height: 15px;
   white-space: nowrap;
 }
-
-.col-2 {
-  display: block;
-  margin-left: 1px;
-}
