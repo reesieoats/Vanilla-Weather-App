@@ -29,7 +29,7 @@ li:first-letter {
   text-transform: capitalize;
 }
 
-a {
+small {
   display: block;
   margin: auto;
 }
