@@ -106,5 +106,6 @@ li:first-letter {
 }
 
 .row weather-forcast {
-  text-align: center;
+  display: block;
+  margin: auto;
 }
