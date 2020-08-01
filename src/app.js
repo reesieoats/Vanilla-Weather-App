@@ -59,7 +59,7 @@ function displayForecast(response) {
               </h3>
               <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" />
               <div class="weather-forcast-temperature">
-                <strong>${Math.round(forecast.main.temp_max)}°</strong> 17°
+                <strong>${forecast.main.temp_max}°</strong> 17°
               </div>
             </div>`;
 }
