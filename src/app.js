@@ -49,9 +49,18 @@ function displayTemperature(response) {
 }
 
 function displayForecast(response) {
+  console.log(response.data.list[0]);
   let forecastElement = document.querySelector("#forecast");
 
-  console.log(response.data.list[0]);
+  forecastElement.innerHTML = ` <div class="col-2">
+              <h3>
+                12:00
+              </h3>
+              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" />
+              <div class="weather-forcast-temperature">
+                <strong>22°</strong> 17°
+              </div>
+            </div>`;
 }
 
 function search(city) {
