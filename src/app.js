@@ -50,7 +50,7 @@ function displayTemperature(response) {
 
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
-  let forecast = resoponse.data.list[0];
+  let forecast = response.data.list[0];
   console.log(forecast);
 
   forecastElement.innerHTML = ` <div class="col-2">
