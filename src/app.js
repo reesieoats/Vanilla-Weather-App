@@ -57,7 +57,7 @@ function displayForecast(response) {
               <h3>
                 12:00
               </h3>
-              <img src="https://openweathermap.org/img/um/${
+              <img src="https://openweathermap.org/img/wn/${
                 forecast.weather[0].icon
               }@2x.png" />
               <div class="weather-forcast-temperature">
