@@ -57,7 +57,9 @@ function displayForecast(response) {
               <h3>
                 12:00
               </h3>
-              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" />
+              <img src="https://openweathermap.org/img/um/${
+                forecast.weather[0].icon
+              }@2x.png" />
               <div class="weather-forcast-temperature">
                 <strong>${Math.round(
                   forecast.main.temp_max
