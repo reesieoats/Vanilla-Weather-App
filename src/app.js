@@ -55,7 +55,7 @@ function displayForecast(response) {
 
   forecastElement.innerHTML = ` <div class="col-2">
               <h3>
-                12:00
+                ${forecast.dt}
               </h3>
               <img src="https://openweathermap.org/img/wn/${
                 forecast.weather[0].icon
