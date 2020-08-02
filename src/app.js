@@ -27,15 +27,17 @@ function formatDate(timestamp) {
 function formatHours(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
-  let minutes = date.getMinutes();
 
   if (hours < 10) {
     hours = `0${hours}`;
   }
 
+  let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
+
+  return `${day} ${hours}:${minutes}`;
 }
 
 function displayTemperature(response) {
