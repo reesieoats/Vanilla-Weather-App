@@ -73,7 +73,7 @@ function displayForecast(response) {
               </div>
             </div>`;
 
-  let forecast = response.data.list[1];
+  forecast = response.data.list[1];
   forecastElement.innerHTML =
     forecastElement.innerHTML +
     ` <div class="col-2">
