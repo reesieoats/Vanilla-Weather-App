@@ -77,21 +77,6 @@ function displayForecast(response) {
   }
 }
 
-forecast = response.data.list[1];
-forecastElement.innerHTML += ` <div class="col-2">
-              <h1>
-                ${formatHours(forecast.dt * 1000)}
-              </h1>
-              <img src="https://openweathermap.org/img/wn/${
-                forecast.weather[0].icon
-              }@2x.png" />
-              <div class="weather-forcast-temperature">
-                <strong>${Math.round(
-                  forecast.main.temp_max
-                )}°</strong>${Math.round(forecast.main.temp_min)}°
-              </div>
-            </div>`;
-
 function search(city) {
   let apiKey = "595adbf6a3ae27cee86c95730ea72e7a";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=595adbf6a3ae27cee86c95730ea72e7a&units=metric`;
