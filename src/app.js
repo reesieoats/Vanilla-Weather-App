@@ -55,13 +55,13 @@ function displayTemperature(response) {
 }
 
 function displayForecast(response) {
-  forecastElement = document.querySelector("#forecast");
+  let forecastElement = document.querySelector("#forecast");
 
   let forecast = null;
 
   for (let index = 0; index < 6; index++) {
-    let forecast = response.data.list[index];
-    forecastElement.innerHTML = ` <div class="col-2">
+    forecast = response.data.list[index];
+    forecastElement.innerHTML += ` <div class="col-2">
               <h1>
                 ${formatHours(forecast.dt * 1000)}
               </h1>
