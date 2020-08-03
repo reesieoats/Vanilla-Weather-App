@@ -75,6 +75,7 @@ function displayForecast(response) {
               </div>
             </div>`;
   }
+}
 
   forecast = response.data.list[1];
   forecastElement.innerHTML += ` <div class="col-2">
