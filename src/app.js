@@ -77,8 +77,8 @@ function displayForecast(response) {
   }
 }
 
-  forecast = response.data.list[1];
-  forecastElement.innerHTML += ` <div class="col-2">
+forecast = response.data.list[1];
+forecastElement.innerHTML += ` <div class="col-2">
               <h1>
                 ${formatHours(forecast.dt * 1000)}
               </h1>
@@ -91,7 +91,6 @@ function displayForecast(response) {
                 )}°</strong>${Math.round(forecast.main.temp_min)}°
               </div>
             </div>`;
-}
 
 function search(city) {
   let apiKey = "595adbf6a3ae27cee86c95730ea72e7a";
